@@ -8,3 +8,6 @@ export default async function Home() {
     </div>
   )
 }
+
+export const revalidate = 600
+//export const dynamic = 'force-dynamic'
