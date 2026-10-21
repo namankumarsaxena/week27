@@ -22,7 +22,6 @@
             context: .
             file: ./docker/Dockerfile.backend
             push: true
-            tags: namankumarsaxena/todo-app-backend1:${
-            { github.sha }}
+            tags: namankumarsaxena/todo-app-backend1:${{ github.sha }}
         ## Steps to deploy this to a vm
 
