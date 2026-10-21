@@ -20,9 +20,9 @@
           uses: docker/build-push-action@v4
           with:
             context:
-            file: ./docker/DOckerfile.backend
+            file: ./docker/Dockerfile.backend
             push: true
-            tags: namankumarsaxena/todo-app-backend:${
+            tags: namankumarsaxena/todo-app-backend1:${
             { github.sha }}
         ## Steps to deploy this to a vm
 
