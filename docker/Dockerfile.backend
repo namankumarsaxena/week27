@@ -11,7 +11,9 @@ COPY ./apps/backend ./apps/backend
 COPY . .
 
 RUN bun install
-RUN cd packages/db && bunx prisma generate 
+RUN cd packages/db && \
+    DATABASE_URL="postgresql://user:password@localhost:5432/placeholder" \
+    bunx prisma generate
 
 EXPOSE 8080
 
